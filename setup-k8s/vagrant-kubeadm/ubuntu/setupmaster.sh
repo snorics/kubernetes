@@ -5,7 +5,7 @@ kubeadm config images pull >/dev/null 2>&1
 
 echo "[TASK 2] Initialize Kubernetes Cluster"
 #kubeadm init --apiserver-advertise-address=172.16.16.100 --pod-network-cidr=192.168.0.0/16 >> /root/kubeinit.log 2>/dev/null
-kubeadm init --pod-network-cidr 10.244.0.0/16 --apiserver-advertise-address=192.168.178.37 >> /root/kubeinit.log
+kubeadm init --pod-network-cidr 10.85.0.0/16 --apiserver-advertise-address=192.168.178.37 >> /root/kubeinit.log
 
 echo "[TASK 3] Deploy Calico network"
 kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f https://docs.projectcalico.org/v3.24.3/manifests/calico.yaml >/dev/null 2>&1
