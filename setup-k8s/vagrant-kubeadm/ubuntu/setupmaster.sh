@@ -38,3 +38,12 @@ kubectl get pod -n rook-ceph
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew install k9s
 
+
+#kubectl apply -f rbd/storageclass.yaml
+#kubectl apply -f ../filesystem.yaml
+#kubectl apply -f cephfs/storageclass.yaml
+
+
+#kubectl patch storageclass rook-ceph-block -p '{"metadata":{"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
+
+
