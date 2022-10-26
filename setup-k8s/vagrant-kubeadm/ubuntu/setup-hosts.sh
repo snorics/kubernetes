@@ -9,8 +9,8 @@ sed -e '/^.*ubuntu-bionic.*/d' -i /etc/hosts
 
 # Update /etc/hosts about other hosts
 cat >> /etc/hosts <<EOF
-192.168.56.2 master01
-192.168.56.3 worker01
-192.168.56.4 worker02
-192.168.56.5 worker03
+192.168.178.37 k8master
+192.168.178.39 k8worker1
+192.168.178.40 k8worker2
+192.168.178.42 k8worker3
 EOF
