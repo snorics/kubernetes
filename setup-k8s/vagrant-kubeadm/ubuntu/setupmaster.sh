@@ -38,6 +38,10 @@ kubectl get pod -n rook-ceph
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew install k9s
 
+# curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+# chmod 700 get_helm.sh
+# ./get_helm.sh
+
 
 #kubectl apply -f rbd/storageclass.yaml
 #kubectl apply -f ../filesystem.yaml
