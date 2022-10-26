@@ -8,7 +8,9 @@ echo "[TASK 2] Initialize Kubernetes Cluster"
 kubeadm init --pod-network-cidr 10.85.0.0/16 --apiserver-advertise-address=192.168.178.37 >> /root/kubeinit.log
 
 echo "[TASK 3] Deploy Calico network"
-kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f https://docs.projectcalico.org/v3.24.3/manifests/calico.yaml >/dev/null 2>&1
+#kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f https://docs.projectcalico.org/v3.24.3/manifests/calico.yaml >/dev/null 2>&1
+kubectl create -f https://projectcalico.docs.tigera.io/manifests/calico.yaml
+
 
 # echo "[TASK 3] Deploy Weave network"
 # kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
