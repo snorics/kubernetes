@@ -25,3 +25,13 @@ echo "[TASK 6] Setup kubectl"
 mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 chown $(id -u):$(id -g) $HOME/.kube/config
+
+echo "[Task 7] Deploy Rook"
+git clone --single-branch --branch master https://github.com/rook/rook.git
+cd rook/deploy/examples
+kubectl create -f crds.yaml -f common.yaml -f operator.yaml
+kubectl create -f cluster.yaml
+kubectl get pod -n rook-ceph
+
+
+
