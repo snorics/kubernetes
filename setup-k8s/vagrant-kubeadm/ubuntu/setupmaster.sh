@@ -33,5 +33,6 @@ kubectl create -f crds.yaml -f common.yaml -f operator.yaml
 kubectl create -f cluster.yaml
 kubectl get pod -n rook-ceph
 
-
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# brew install k9s
 
