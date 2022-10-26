@@ -35,7 +35,7 @@ echo "[TASK 2] Change private key permission"
 chmod 400 ~/.ssh/id_rsa
 
 echo "[TASK 3] Pull cluster connection token"
-scp -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no root@192.168.56.2:/joincluster.sh /joincluster.sh
+scp -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no root@192.168.178.37:/joincluster.sh /joincluster.sh
 
 echo "[Task 4] Join the cluster"
 bash /joincluster.sh
