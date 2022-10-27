@@ -52,4 +52,5 @@ kubectl get pod -n rook-ceph
 
 #kubectl patch storageclass rook-ceph-block -p '{"metadata":{"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
 
+#kubectl expose deployment hlc-server --type=LoadBalancer --name=my-service -n hlc-storage
 
