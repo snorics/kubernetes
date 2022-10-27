@@ -54,3 +54,9 @@ kubectl get pod -n rook-ceph
 
 #kubectl expose deployment hlc-server --type=LoadBalancer --name=my-service -n hlc-storage
 
+
+# INGRESS CONTROLLER
+git clone https://github.com/nginxinc/kubernetes-ingress.git --branch v2.4.1
+#https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/
+
+
