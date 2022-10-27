@@ -48,7 +48,7 @@ kubectl get pod -n rook-ceph
 #kubectl apply -f rbd/storageclass.yaml
 #kubectl apply -f ../filesystem.yaml
 #kubectl apply -f cephfs/storageclass.yaml
-
+#kubectl apply -f cephfs/kube-registry.yaml
 
 #kubectl patch storageclass rook-ceph-block -p '{"metadata":{"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
 
